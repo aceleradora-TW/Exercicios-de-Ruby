@@ -46,4 +46,3 @@ puts "Retirado 94 creditos"
 Ruas.adicionarCredito(-94)
 puts Ruas.credito
 Ruas.ligar("68")
-#123
