@@ -1,0 +1,19 @@
+<h1>Game#index</h1>
+<p>Find me in app/views/game/index.html.erb</p>
+<br />
+
+<div id = <%= @game_area_id %> >
+  <% @casa_hash.each do |c| %>
+  <div><%= tag "input", @casa_hash[1] %></div>
+  <% end %>
+</div>
+<br />
+
+<h1><%= p "hue hue hue"%></h1>
+
+<script>
+  function casaClick(casa){
+    alert(casa);
+  }
+
+</script>

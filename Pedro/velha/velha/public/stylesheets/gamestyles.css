@@ -1,0 +1,30 @@
+#tabuleiro {
+    width: 330px;
+}
+
+#casa {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 0 5px 5px;
+    background-color: #0066FF;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+#casaX {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 0 5px 5px;
+    background-color: #339933;
+}
+
+#casaO {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 0 5px 5px;
+    background-color: #FF6600;
+}
