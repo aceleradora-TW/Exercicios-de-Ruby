@@ -1,7 +1,10 @@
 class Telefone
+
 	attr_accessor :numero
 	attr_accessor :credito
+
 	def initialize(numero, credito)
+		raise ArgumentError.new("Colocou um numero errado") if numero.length != 9
 		@numero = numero
 		@credito = credito
 		@@qtd ||=0
@@ -31,7 +34,7 @@ class Telefone
 	end
 
 end
-
+=begin
 Ruas = Telefone.new("97503355", 50)
 puts Ruas.numero
 puts Ruas.credito
@@ -47,3 +50,4 @@ Ruas.adicionarCredito(-94)
 puts Ruas.credito
 Ruas.ligar("68")
 #123
+=end
