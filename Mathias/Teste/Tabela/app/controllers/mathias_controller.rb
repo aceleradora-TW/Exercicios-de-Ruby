@@ -1,0 +1,2 @@
+class MathiasController < ApplicationController
+end

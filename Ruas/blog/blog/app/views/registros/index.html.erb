@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class ="row">
+  <div class="col-lg-4 col-lg-offset-4">
+    <h1>Lista de Registros</h1>
+  </div>
+</div>
+<div class= "col-lg-6 col-lg-offset-3">
+  <table>
+    <thead>
+      <tr>
+        <th class="margem_dir">Nome</th>
+        <th >Msg</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @registros.each do |registro| %>
+        <tr>
+          <td class="linha"><%= registro.nome %></td>
+          <td class="margem_dir linha"><%= registro.msg %></td>
+          <td><%= link_to 'Mostrar', registro, :class => "btn btn-success" %></td>
+          <td><%= link_to 'Editar', edit_registro_path(registro), :class => "btn btn-primary" %></td>
+          <td><%= link_to 'Deletar', registro, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger"  %></td>
+        </tr>
+
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+  <div class="col-lg-1 col-lg-offset-3">
+    <%= link_to 'Novo Registro', new_registro_path, :class => "btn btn-primary" %>
+  </div>
+</div>
